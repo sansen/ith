@@ -1,0 +1,90 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 6.68075 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "difonos" 
+        xmin = 0 
+        xmax = 6.68075 
+        intervals: size = 19 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.49618823625212044 
+            text = "" 
+        intervals [2]:
+            xmin = 0.49618823625212044 
+            xmax = 0.681280777520918 
+            text = "-m" 
+        intervals [3]:
+            xmin = 0.681280777520918 
+            xmax = 0.9422497642787879 
+            text = "ma" 
+        intervals [4]:
+            xmin = 0.9422497642787879 
+            xmax = 1.3901987037436814 
+            text = "" 
+        intervals [5]:
+            xmin = 1.3901987037436814 
+            xmax = 1.6571875812072712 
+            text = "-l" 
+        intervals [6]:
+            xmin = 1.6571875812072712 
+            xmax = 1.8911778333663725 
+            text = "la" 
+        intervals [7]:
+            xmin = 1.8911778333663725 
+            xmax = 2.4431548384596367 
+            text = "" 
+        intervals [8]:
+            xmin = 2.4431548384596367 
+            xmax = 2.5762306303760036 
+            text = "-p" 
+        intervals [9]:
+            xmin = 2.5762306303760036 
+            xmax = 2.8084610430776777 
+            text = "pa" 
+        intervals [10]:
+            xmin = 2.8084610430776777 
+            xmax = 3.3226039803961656 
+            text = "" 
+        intervals [11]:
+            xmin = 3.3226039803961656 
+            xmax = 3.5429646234837127 
+            text = "-b" 
+        intervals [12]:
+            xmin = 3.5429646234837127 
+            xmax = 3.713566411680523 
+            text = "ba" 
+        intervals [13]:
+            xmin = 3.713566411680523 
+            xmax = 4.204046552746354 
+            text = "" 
+        intervals [14]:
+            xmin = 4.204046552746354 
+            xmax = 4.360431525260097 
+            text = "-k" 
+        intervals [15]:
+            xmin = 4.360431525260097 
+            xmax = 4.609225799713779 
+            text = "ka" 
+        intervals [16]:
+            xmin = 4.609225799713779 
+            xmax = 5.04283867804734 
+            text = "" 
+        intervals [17]:
+            xmin = 5.04283867804734 
+            xmax = 5.284524544659488 
+            text = "-s" 
+        intervals [18]:
+            xmin = 5.284524544659488 
+            xmax = 5.497776779905502 
+            text = "sa" 
+        intervals [19]:
+            xmin = 5.497776779905502 
+            xmax = 6.68075 
+            text = "" 

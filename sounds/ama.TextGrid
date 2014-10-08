@@ -1,0 +1,78 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 4.5790625 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "difonos" 
+        xmin = 0 
+        xmax = 4.5790625 
+        intervals: size = 16 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.825439934436191 
+            text = "" 
+        intervals [2]:
+            xmin = 0.825439934436191 
+            xmax = 1.026923467134044 
+            text = "-A" 
+        intervals [3]:
+            xmin = 1.026923467134044 
+            xmax = 1.2414665812738306 
+            text = "Am" 
+        intervals [4]:
+            xmin = 1.2414665812738306 
+            xmax = 1.4001697068018921 
+            text = "ma" 
+        intervals [5]:
+            xmin = 1.4001697068018921 
+            xmax = 1.617651767710717 
+            text = "a-" 
+        intervals [6]:
+            xmin = 1.617651767710717 
+            xmax = 1.7557822658555111 
+            text = "" 
+        intervals [7]:
+            xmin = 1.7557822658555111 
+            xmax = 1.9468138058429925 
+            text = "-a" 
+        intervals [8]:
+            xmin = 1.9468138058429925 
+            xmax = 2.0996390378329775 
+            text = "am" 
+        intervals [9]:
+            xmin = 2.0996390378329775 
+            xmax = 2.2140123967845624 
+            text = "ma" 
+        intervals [10]:
+            xmin = 2.2140123967845624 
+            xmax = 2.4186441280780064 
+            text = "a-" 
+        intervals [11]:
+            xmin = 2.4186441280780064 
+            xmax = 2.701230804626096 
+            text = "" 
+        intervals [12]:
+            xmin = 2.701230804626096 
+            xmax = 2.9011567269603944 
+            text = "-a" 
+        intervals [13]:
+            xmin = 2.9011567269603944 
+            xmax = 3.0320249781894244 
+            text = "am" 
+        intervals [14]:
+            xmin = 3.0320249781894244 
+            xmax = 3.2047710698117435 
+            text = "mA" 
+        intervals [15]:
+            xmin = 3.2047710698117435 
+            xmax = 3.34959860117187 
+            text = "A-" 
+        intervals [16]:
+            xmin = 3.34959860117187 
+            xmax = 4.5790625 
+            text = "" 

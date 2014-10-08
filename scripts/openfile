@@ -1,0 +1,3 @@
+sound$ = readFile$ ("/sounds/ma.wav")
+select Sound sound$
+play sound$
