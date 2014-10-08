@@ -3,22 +3,22 @@ import re
 
 def generateScript(diPhone, reads, selects, count):
     if len(diPhone) == 1 and count == 0:
-        reads += 'Read from file: "../sounds/-'+ diPhone  +'.wav" \n'
+        reads += 'Read from file: "sounds/-'+ diPhone  +'.wav" \n'
         reads += 'Rename: "difono'+ str(count) +'"\n'
         selects += 'select Sound difono'+ str(count) +'\n'
-    elif len(diPhone) == 1 and count !=0:
-        reads += 'Read from file: "../sounds/'+ diPhone +'-.wav"\n'
+    elif len(diPhone) == 1 and count != 0:
+        reads += 'Read from file: "sounds/'+ diPhone +'-.wav"\n'
         reads += 'Rename: "difono'+ str(count) +'"\n'
         selects += 'plus Sound difono'+ str(count) +'\n'
     else:
-        reads += 'Read from file: "../sounds/'+ diPhone +'.wav"\n'
+        reads += 'Read from file: "sounds/'+ diPhone +'.wav"\n'
         reads += 'Rename: "difono'+ str(count) +'"\n'
         selects += 'plus Sound difono'+ str(count) +'\n'
     return (reads, selects)
          
 #string = "mamAsalAlapApa"
-#string = "kAla"
-string = 'papapApA'
+string = "papAmamAalakasa"
+#string = 'mamama'
 sil = re.findall("([m|k|s|p|l][a|A]|\?)",string)
 sil1 = re.findall("([a|A][m|k|s|p|l]|[m|k|s|p|l|a|A])",string)
 
