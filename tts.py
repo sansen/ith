@@ -16,9 +16,9 @@ def generateScript(diPhone, reads, selects, count):
         selects += 'plus Sound difono'+ str(count) +'\n'
     return (reads, selects)
          
-#string = "mamAsalAlapApa"
+string = "mamAsalalapapapapAsalalamasa"
 #string = "papAmamAlakasa"
-string = 'mamama'
+#string = 'mamama'
 sil = re.findall("([m|k|s|p|l][a|A]|\?)",string)
 sil1 = re.findall("([a|A][m|k|s|p|l]|[m|k|s|p|l|a|A])",string)
 
