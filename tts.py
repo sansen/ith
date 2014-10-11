@@ -17,8 +17,8 @@ def generateScript(diPhone, reads, selects, count):
     return (reads, selects)
          
 #string = "mamAsalAlapApa"
-string = "papAmamAalakasa"
-#string = 'mamama'
+#string = "papAmamAlakasa"
+string = 'mamama'
 sil = re.findall("([m|k|s|p|l][a|A]|\?)",string)
 sil1 = re.findall("([a|A][m|k|s|p|l]|[m|k|s|p|l|a|A])",string)
 

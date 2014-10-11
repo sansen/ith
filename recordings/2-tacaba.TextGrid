@@ -1,0 +1,78 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 11.557 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "difonos" 
+        xmin = 0 
+        xmax = 11.557 
+        intervals: size = 16 
+        intervals [1]:
+            xmin = 0 
+            xmax = 3.3519478713702777 
+            text = "" 
+        intervals [2]:
+            xmin = 3.3519478713702777 
+            xmax = 3.4682826977631436 
+            text = "al" 
+        intervals [3]:
+            xmin = 3.4682826977631436 
+            xmax = 3.591898298398975 
+            text = "la" 
+        intervals [4]:
+            xmin = 3.591898298398975 
+            xmax = 4.860362086399392 
+            text = "" 
+        intervals [5]:
+            xmin = 4.860362086399392 
+            xmax = 4.978746639799113 
+            text = "am" 
+        intervals [6]:
+            xmin = 4.978746639799113 
+            xmax = 5.11651787783901 
+            text = "ma" 
+        intervals [7]:
+            xmin = 5.11651787783901 
+            xmax = 6.151818711536962 
+            text = "" 
+        intervals [8]:
+            xmin = 6.151818711536962 
+            xmax = 6.327465377664259 
+            text = "ak" 
+        intervals [9]:
+            xmin = 6.327465377664259 
+            xmax = 6.420798205695152 
+            text = "ka" 
+        intervals [10]:
+            xmin = 6.420798205695152 
+            xmax = 7.433743635558492 
+            text = "" 
+        intervals [11]:
+            xmin = 7.433743635558492 
+            xmax = 7.579397373656496 
+            text = "ap" 
+        intervals [12]:
+            xmin = 7.579397373656496 
+            xmax = 7.696559876675796 
+            text = "pa" 
+        intervals [13]:
+            xmin = 7.696559876675796 
+            xmax = 8.857658192524882 
+            text = "" 
+        intervals [14]:
+            xmin = 8.857658192524882 
+            xmax = 8.997133590971407 
+            text = "as" 
+        intervals [15]:
+            xmin = 8.997133590971407 
+            xmax = 9.131647413979122 
+            text = "sa" 
+        intervals [16]:
+            xmin = 9.131647413979122 
+            xmax = 11.557 
+            text = "" 
