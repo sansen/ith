@@ -13,12 +13,12 @@ class PitchManager:
         self.range = pitchRange
         #praat extraer-pitch-track.praat 12345.wav 12345.PitchTier 50 300
         #try:
-        print("* Running: 'praat scripts/extraer-pitch-track.praat ../sounds/"+
+        print("* Running: 'praat scripts/extraer-pitch-track.praat ../sounds2/"+
               self.synthesis +".wav " + self.synthesis +
               ".PitchTier " + str(pitchRange[0]) + " " +
               str(pitchRange[1])+"'" )
         
-        os.system("praat scripts/extraer-pitch-track.praat ../sounds/"+
+        os.system("praat scripts/extraer-pitch-track.praat ../sounds2/"+
                   self.synthesis +".wav " + self.synthesis +
                   ".PitchTier " + str(pitchRange[0]) + " " + str(pitchRange[1]))
         
@@ -124,12 +124,12 @@ class PitchManager:
         #praat reemplazar-pitch-track.praat 12345.wav
         #                12345-mod.PitchTier 12345-mod.wav 50 300
         #Ejecutamos el script para reemplazar el Pitch Track
-        print("* Running: 'praat scripts/reemplazar-pitch-track.praat .../sounds/"+
+        print("* Running: 'praat scripts/reemplazar-pitch-track.praat .../sounds2/"+
               self.synthesis +".wav " + self.synthesis +
               "-mod.PitchTier " + self.synthesis +"-mod.wav "
               + str(self.range[0]) + " " + str(self.range[1]) + "'" )
         
-        os.system("praat scripts/reemplazar-pitch-track.praat ../sounds/"+
+        os.system("praat scripts/reemplazar-pitch-track.praat ../sounds2/"+
               self.synthesis +".wav " + self.synthesis +
               "-mod.PitchTier " + self.synthesis +"-mod.wav " +
                   str(self.range[0]) + " " + str(self.range[1]))
@@ -145,15 +145,15 @@ class PitchManager:
 # concatenadas se podra ejecutar.
 def generateScript(diPhone, reads, selects, count):
     if len(diPhone) == 1 and count == 0:
-        reads += 'Read from file: "sounds/-'+ diPhone  +'.wav" \n'
+        reads += 'Read from file: "sounds2/-'+ diPhone  +'.wav" \n'
         reads += 'Rename: "difono'+ str(count) +'"\n'
         selects += 'select Sound difono'+ str(count) +'\n'
     elif len(diPhone) == 1 and count != 0:
-        reads += 'Read from file: "sounds/'+ diPhone +'-.wav"\n'
+        reads += 'Read from file: "sounds2/'+ diPhone +'-.wav"\n'
         reads += 'Rename: "difono'+ str(count) +'"\n'
         selects += 'plus Sound difono'+ str(count) +'\n'
     else:
-        reads += 'Read from file: "sounds/'+ diPhone +'.wav"\n'
+        reads += 'Read from file: "sounds2/'+ diPhone +'.wav"\n'
         reads += 'Rename: "difono'+ str(count) +'"\n'
         selects += 'plus Sound difono'+ str(count) +'\n'
     return (reads, selects)
@@ -179,8 +179,7 @@ def processSegments():
     f.close()
     return segment
     
-
-"Comienzo de programa"
+#Comienzo de programa"
 def main(argv):
     string = ''
     outputfile = ''
@@ -248,20 +247,20 @@ def main(argv):
         segments = processSegments()
 
         # creamos una instancia para manejar el pitch
-        s=PitchManager('chain', (50,150))
+        s=PitchManager('chain', (75,500))
         lsegments = len(segments)
         
         #Modificamos el pitch
-        s.modifyPitch('flatten', 90, 0, lsegments)
+        s.modifyPitch('average', 200, 0, lsegments)
         for i in range(0, lsegments):
             if accentInLast and i == lsegments - 4:
                 s.modifyPitch('linear', 150, segments[i],segments[i+2])
             elif not accentInLast:
                 if i == lsegments-1:
-                    s.modifyPitch('linear', 110, segments[0], \
-                                  segments[int(1*lsegments/2)], "dsc")
-                    s.modifyPitch('linear',110, \
-                                   segments[int(lsegments/2)],segments[i])
+                    # s.modifyPitch('linear', 110, segments[0], \
+                    #               segments[int(1*lsegments/2)], "dsc")
+                    # s.modifyPitch('linear',110, \
+                    #                segments[int(lsegments/2)],segments[i])
                     s.modifyPitch('linear', 150, \
                                   segments[int(8*lsegments/10)],segments[i])
         s.savePitch()
